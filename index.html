@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Don Cabron Hamburgueria</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Don Cabron🍔 </a>
+      <nav>
+        <a href="#homes">Inicio</a>
+        <a href="#cardapio">Cardapio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#localização">localização</a>
+      </nav>
+      <div class="cart-info">
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/shopping-cart.png"
+          alt="Carrinho"
+          class="cart-icon"
+        />
+        <span id="cart-count">0</span> itens no carrinho
+      </div>
+      <a href="#cardapio" class="btn">Peça Agora</a>
+      <button class="menu-btn" onclick="openSidebar()">☰ Menu</button>
+    </header>
+
+    <section id="home" class="hero-wrapper fade-in">
+      <article class="hero">
+        <div>
+          <h1>o melhor hamburguer da cidade</h1>
+          <p>ingredientes frescos e sabor incomparável</p>
+          <nav class="hero-buttons">
+            <a id="cardapio" class="btn" href="#cardapio">Ver Cardapio</a>
+            <a class="btn btn-outline">📲 whatsapp</a>
+          </nav>
+          <ul class="hero-stats">
+            <li>
+              <strong>+500</strong>
+              clientes satisfeitos
+            </li>
+            <li>
+              <strong>4.9⭐</strong>
+              avaliação
+            </li>
+            <li>
+              <strong>40min</strong>
+              Ou seu dinheiro de volta
+            </li>
+          </ul>
+        </div>
+
+        <img
+          src="https://bing.com/th?id=OSK.d8d86d898c5e64514158e4ce07158d36"
+          alt="imagem de um hamburguer"
+        />
+      </article>
+    </section>
+
+    <section id="cardapio" class="cardapio fade-in">
+      <h2>nosso cardapio</h2>
+      <p>escolha seu favorito e peça ja o seu favorito</p>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Buscar no cardápio..."
+        class="search-bar"
+      />
+
+      <ul class="menu-grid">
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1610970878459-a0e464d7592b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFtYnVyZ2VyfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>hamburguer artesanal</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://th.bing.com/th/id/OIP.whyhqslNRI9HAIl_3jn3tQHaHa?w=175&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>O melhor Combo Coca Cola + Hemburguer de Qualidade</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>19,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.6OvGyxGwFbBF5BC_FqFh_AHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+          />
+          <span class="badge">mais vendido</span>
+          <h3>Combo Casal</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>Cheese Burguer</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1528751014936-863e6e7a319c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmF0YXRhJTIwZnJpdGF8ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>batata frita</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3NoYWtlfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>Biscoito de chocolate frappe</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1577805947697-89e18249d767?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWlsa3NoYWtlfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <span class="badge">mais vendido</span>
+          <h3>Caneca recheada de creme e Chocolate</h3>
+          <p>pao brioche 180g, carne, queijo, alface, tomate</p>
+          <strong>29,90$</strong>
+          <a href="" class="btn">Pedir</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="sobre" class="sobre fade-in">
+      <img
+        src="https://unsplash.com/pt-br/fotografias/um-grupo-de-pessoas-em-pe-em-um-circulo-Nwo3kck3zMI"
+        alt="nossa historia"
+      />
+      <article>
+        <h2>nossa historia</h2>
+        <p>Desde <strong> 2000 </strong></p>
+        <ul>
+          <li>
+            <strong> 🥩Carne fresca</strong> - 100% carne bovina selecionada
+          </li>
+          <li>
+            <strong> 🚀Entrega Rapida</strong> - entrega maxima em até 40
+            minutos
+          </li>
+          <li><strong> 💳Pagamento Facil</strong> - pix, cartão, dinheiro</li>
+        </ul>
+      </article>
+    </section>
+    <section id="cta" class="cta fade-in">
+      <h2>Bateu a fome?</h2>
+      <p>faça seu pedido agora mesmo! e receba em casa</p>
+      <a href="" class="btn btn-light">📲 Pedir Pelo whatsapp</a>
+    </section>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Seu Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: R$ 0.00</p>
+        <form id="delivery-form">
+          <label for="delivery-method">Método de Entrega:</label>
+          <select id="delivery-method">
+            <option value="entrega">Entrega (R$ 5.00)</option>
+            <option value="retirada">Retirada no Local</option>
+          </select>
+          <label for="address">Endereço (se entrega):</label>
+          <input type="text" id="address" placeholder="Rua, número, bairro" />
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" placeholder="(11) 99999-9999" required />
+
+          <div class="payment-methods">
+            <p><strong>Forma de pagamento</strong></p>
+
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="pix" required />
+              💸 Pix
+            </label>
+            <div class="pix-container" id="pix-container" style="display: none">
+              <label for="pix-key"><strong>Pix Copia e Cola</strong></label>
+              <input
+                type="text"
+                id="pix-key"
+                value="00020126580014BR.GOV.BCB.PIX0136SUA-CHAVE-PIX-AQUI5204000053039865802BR5920NOME DO RECEBEDOR6009SAO PAULO62070503***6304ABCD"
+                readonly
+              />
+              <button type="button" id="copy-pix">📋 Copiar Pix</button>
+            </div>
+
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="cartao" />
+              💳 Cartão
+              <div
+                class="card-type-container"
+                id="card-type-container"
+                style="display: none"
+              >
+                <p><strong>Tipo de cartão</strong></p>
+
+                <label class="payment-option">
+                  <input type="radio" name="cardType" value="debito" />
+                  💳 Débito
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="cardType" value="credito" />
+                  💳 Crédito
+                </label>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="dinheiro" />
+              💵 Dinheiro
+            </label>
+            <div
+              class="change-container"
+              id="change-container"
+              style="display: none"
+            >
+              <label for="change">Troco para quanto?</label>
+              <input
+                type="number"
+                id="change"
+                placeholder="Ex: 50,00"
+                min="0"
+              />
+            </div>
+          </div>
+        </form>
+        <p
+          id="form-error"
+          style="color: red; display: none; margin-top: 10px"
+        ></p>
+
+        <button id="checkout-btn" class="btn">Finalizar Pedido</button>
+      </div>
+    </div>
+
+    <!-- Modal do Produto -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content product-modal-content">
+        <span class="close" onclick="closeProductModal()">&times;</span>
+        <div class="product-images">
+          <button class="image-nav prev" onclick="changeImage(-1)">
+            &#10094;
+          </button>
+          <img id="product-image" src="" alt="" class="product-large-image" />
+          <button class="image-nav next" onclick="changeImage(1)">
+            &#10095;
+          </button>
+        </div>
+        <h2 id="product-name"></h2>
+        <p id="product-description"></p>
+        <strong id="product-price"></strong>
+        <button id="add-to-cart-btn" class="btn">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="text-map">
+      <h2>Encontre-nos aqui!</h2>
+    </div>
+    <section class="map">
+      <iframe
+        and
+        id="localização"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.6333096845000!3d-23.5505200847000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c5b8e8e8e7%3A0x8e8e8e8e8e8e8e8e!2sBurguer%20House!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr"
+        width="50%"
+        height="450"
+        style="border: 0"
+        padding="10 , 10"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <footer id="contato" class="contato">
+      <section>
+        <h3>🍔Burguer House</h3>
+        <p>o melhor hamburguer da cidade</p>
+      </section>
+
+      <section>
+        <h4>Horario</h4>
+        <p>terça a domingo 18h às 23h</p>
+      </section>
+
+      <section>
+        <h4>Contato</h4>
+        <p>(11)11982362622</p>
+        <p>📍rua dos hamburgueres, 123</p>
+      </section>
+
+      <section>
+        <h4>Redes Sociais</h4>
+        <p>Instagram</p>
+      </section>
+
+      <p class="copy">@ 2025 - Don - Cabron</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Produto adicionado ao carrinho!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
