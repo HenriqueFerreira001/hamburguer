@@ -482,7 +482,7 @@ ${deliveryText}
 📞 *Telefone:* ${phone}
 `;
 
-    const whatsappNumber = "551182362622"; // SEU NÚMERO
+    const whatsappNumber = "5511982362622"; // SEU NÚMERO
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         message
     )}`;
