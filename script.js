@@ -164,7 +164,7 @@ function sendOrderViaWhatsApp() {
         return;
     }
     const message = encodeURIComponent(generateOrderMessage());
-    const phoneNumber = '5511976724548'; // Substitua pelo número real da hamburgueria
+    const phoneNumber = '5511976724548';
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
     // Confirmação de pedido
@@ -482,8 +482,8 @@ ${deliveryText}
 📞 *Telefone:* ${phone}
 `;
 
-    const whatsappNumber = "5511982362622"; // SEU NÚMERO
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    const whatsappNumber = "551182362622"; // SEU NÚMERO
+    const whatsappURL = `https://wa.me/11982362622${whatsappNumber}?text=${encodeURIComponent(
         message
     )}`;
 
